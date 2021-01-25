@@ -1,0 +1,638 @@
+* {
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-Bold.eot');
+    src: url('../fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Gotham-Bold.woff2') format('woff2'),
+        url('../fonts/Gotham-Bold.woff') format('woff'),
+        url('../fonts/Gotham-Bold.ttf') format('truetype'),
+        url('../fonts/Gotham-Bold.svg#Gotham-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url('../fonts/кавычки/subset-BrandonGrotesque-Bold.eot');
+    src: url('../fonts/кавычки/subset-BrandonGrotesque-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/кавычки/subset-BrandonGrotesque-Bold.woff2') format('woff2'),
+        url('../fonts/кавычки/subset-BrandonGrotesque-Bold.woff') format('woff'),
+        url('../fonts/кавычки/subset-BrandonGrotesque-Bold.ttf') format('truetype'),
+        url('../fonts/кавычки/subset-BrandonGrotesque-Bold.svg#BrandonGrotesque-Bold') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+.container {
+    max-width:1155px ;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logo {
+    background-image: url(../img/logo.png);
+    width: 50px;
+    height: 48px;
+    margin-right: auto;
+}
+.nav-header {
+    height: 93px;
+    margin: auto;
+    display: flex;
+    justify-content:flex-start;
+    align-items:center;
+}
+.first-menu {
+    height: 34px;
+    display: flex;
+    margin: auto;
+}
+.item {
+    text-decoration: none;
+    margin: auto;
+    padding:12px 21px;
+    font-family: 'Lato';
+    font-size: 17px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #868686;
+    cursor: pointer;
+}
+.item:hover{
+    background-color: #ffbb42;
+    color: #ffffff;
+    border-radius: 5px;
+}
+.first-block {
+    height: 589px;
+    background-color: #709dca;
+}
+.boost-heading {
+    padding-top: 110px;
+    margin-bottom: 10px;
+    font-family:'Gotham';
+    font-size: 35px;
+    line-height: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -0.025em;
+    color: #ffffff;
+}
+.boost-paragraph {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: none;
+    letter-spacing: normal;
+    color: #ffffff;
+    margin-bottom: 33px;
+}
+.container.boost-up {
+    text-align: center;
+    position: relative;
+}
+.form {
+    margin: auto;
+    width: 1084px;
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+}
+.form-element {
+    border: none;
+    width: 281px;
+    height: 46px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    font-family: 'Open Sans';
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #a9a9a9;
+    padding-left: 41px;
+}
+.form-submit {
+    border: none;
+    border-radius: 5px;
+    font-family: 'Open Sans';
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    width: 211px;
+    height: 46px;
+    background-color: #ffbb42;
+    cursor: pointer;
+}
+.wrap {
+    position: relative;
+}
+.wrap::before {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 100%;
+    content: '\f007';
+    font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #6e6e6e;
+}
+.wrap.email::before {
+    content:'\f0e0';
+}
+.wrap.tel::before {
+    content:'\f879';
+}
+.nout {
+    position: absolute;
+    left:50%;
+    top:309px;
+    transform: translate(-50%);
+}
+.display {
+    position:absolute;
+    z-index: 1;
+    top:327px;
+    left:50%;
+    transform: translate(-50%);
+}
+.dot {
+    margin-left: 6px;
+    width: 16px;
+    height: 15px;
+}
+.dots {
+    display: flex;
+    justify-content:center;
+    margin-top:432px;
+}
+.our-service-title {
+    text-align: center;
+    margin-top:201px;
+    margin-bottom:9px;
+    font-family: 'Gotham';
+    font-size: 30px;
+    line-height: 22px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -0.025em;
+    color: #394b50;
+}
+.our-service-paragraph {
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 93px;
+}
+.our-service-description {
+    display: flex;
+    flex-direction:row;
+    align-content: flex-start;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+.description {
+    flex-basis: 430px;
+    margin-bottom: 79px;
+    position: relative;
+    margin-left:90px ;
+}
+.description::before {
+    position:absolute;
+    left:-90px;
+    content:url(../img/icon/time.png);
+    font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 22px;
+}
+.description.fully-responsive::before{
+    content:url(../img/icon/system.png);
+}
+.description.working::before{
+    content: url(../img/icon/work.png);
+}
+.description.retina::before{
+    content: url(../img/icon/retina.png);
+}
+.description.friendly-code::before{
+    content: url(../img/icon/friendly.png);
+}
+.description.flat-trendy::before{
+    content: url(../img/icon/cash.png);
+}
+.description-title {
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #394b50;
+}
+.description-paragraph {
+    font-family: 'Open Sans';
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #7b7b7b;
+}
+.third-block {
+    height: 623px;
+    background-color: #ffc155;
+}
+.table-photo {
+   margin-left: -25%;
+}
+.container.about-us {
+    display: flex;
+    flex-direction:row;
+    align-items:flex-start;
+}
+.about-us-description {
+    flex-direction:column;
+    margin-left: 81px;
+}
+.about-us-title {
+    margin-top: 164px;
+    margin-bottom: 28px;
+    font-family: 'Gotham';
+    font-size: 30px;
+    line-height: 22px;
+    font-weight: 900;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.about-us-paragraph {
+    font-family: 'Open Sans';
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 33px;
+}
+.about-us-button {
+    font-family: 'Lato';
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    width: 145px;
+    height: 46px;
+    border: 1px solid #e7ad48;
+    background-color: #ffc155;
+    color: #ffffff;
+    cursor: pointer;
+}
+.fourth-block {
+    height: 898px;
+    background-color: #e7edf3;
+}
+.choos-your-price-title {
+    padding-top: 137px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Gotham';
+    font-size: 30px;
+    line-height: 22px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #394b50;
+}
+.choos-your-price-paragraph {
+    margin-bottom: 49px;
+    text-align: center;
+    font-family: 'Lato';
+    font-size: 18px;
+    font-weight: 300;
+    color: #75888d;
+}
+.card-your-price {
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    width: 391px;
+    height: 441px;
+    background-color: #ffffff;
+}
+.card-your-price-title {
+    padding-top: 57px;
+    margin-bottom: 30px;
+    font-family: 'Lato';
+    font-size: 25px;
+    line-height: 22px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #818b95;
+}
+.card-your-price-paragraph {
+    font-family: 'Lato';
+    font-size: 20px;
+    font-weight: 300;
+    color: #818b95;
+    margin-bottom: 32px;
+}
+.currency {
+    margin-bottom: 15px;
+    font-family: 'Lato';
+    font-size: 60px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #ffbb42;
+}
+.list-your-price {
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Lato';
+    font-size: 13.5px;
+    line-height: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #b5bbc1;
+    margin-bottom: 18px;
+}
+.list {
+    border-top: 1px solid #e2e9f0;
+    width: 330px;
+}
+.cards-your-price {
+    display: flex;
+    align-items:center;
+}
+.card-your-price.blue {
+    width: 395px;
+    height: 501px;
+    background-color: #709dca;
+}
+.card-your-price-title.blue {
+    color: #ffffff;
+}
+.currency.blue {
+    color: #ffffff;
+    font-weight: 300;
+}
+.card-your-price-paragraph.blue {
+    color: #ffffff;
+    font-weight: 300;
+}
+.list-your-price.blue {
+    color: #c2e1ff;
+}
+.container.how-it-works {
+    height: 860px;
+}
+.steps {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 91px;
+}
+.first-step {
+    width:215px;
+}
+.first-step-title {
+    margin-top: 100px;
+    font-family: 'Lato';
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #394b50;
+}
+.first-step-paragraph {
+    font-family: 'Open Sans';
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #7b7b7b;
+}
+.first-step::before {
+    content: url(../img/icon_works/music.png);
+    margin-top: 100px;
+    
+}
+.first-step:nth-child(2)::before {
+    content: url(../img/icon_works/lock.png);
+}
+.first-step:nth-child(3)::before {
+    content: url(../img/icon_works/download.png);
+}
+.first-step:nth-child(4)::before {
+    content: url(../img/icon_works/like.png);
+}
+.choos-your-price-paragraph.how-it-work {
+    margin-bottom: 110px;
+}
+.container.how-it-works {
+    background-image: url(../img/arrows/shape_2_424.png),url(../img/arrows/shape_2_copy_600.png),url(../img/arrows/shape_3_427.png),
+    url(../img/arrows/shape_3_copy_2_601.png),url(../img/arrows/shape_3_copy_2_602.png),url(../img/arrows/shape_3_copy_3_604.png),
+    url(../img/arrows/shape_3_copy_3_605.png),url(../img/arrows/shape_3_copy_428.png);
+    background-repeat: no-repeat;
+    background-position: 80% 30%, 20% 30%, 16.5% 33%, 71.5% 33%, 28.5% 33%, 45% 50%, 55% 50%, 83.5% 33%;
+}
+.about-us-button.fifth-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 149px;
+}
+.sixs-block {
+    height: 908px;
+    background-color: #ffc155;
+}
+.choos-your-price-title.happy-clients {
+    color: #ffffff;
+}
+.choos-your-price-paragraph.happy-clients {
+    color: #ffffff;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content:space-around;
+    height: 508px;
+    width: 1170px;
+}
+.card-photo {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+    width: 567px;
+    height: 241px;
+    background-color: #ffffff;
+    border-radius: 3px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 355px;
+    height: 100%;
+    margin-right: 41px;
+    margin-left: 31px;
+}
+.card-description {
+    font-family: 'Open Sans';
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #7b7b7b;
+    margin-bottom: 29px;
+}
+.card-people-name {
+    font-family: 'Lato';
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #99a9ae;
+}
+.people-name {
+    color: #f6772c;
+}
+.quotes {
+    font-family: 'Brandon Grotesque';
+    font-size: 30px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #7b7b7b;
+}
+.photo {
+    width: 121px;
+    height: 121px;
+}
+.form.newsletter {
+    width: 937px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 53px;
+}
+.form-element.newsletter-name {
+    border: 1px solid #cbcbcb;
+    width: 308px;
+}
+.form-element.newsletter-email{
+    border: 1px solid #cbcbcb;
+    width: 388px;
+}
+.adress-planet{
+    position: relative;
+    width: 1102px;
+    height: 549px;
+    background-image:url(../img/planet/planet.png);
+    background-repeat: no-repeat;
+    margin-bottom: 57px;
+}
+.adress {
+    position: absolute;
+    left: 409px;
+    top:37px;
+    width: 285px;
+    height: 298px;
+    background-image: url(../img/planet/shape_4_751.png);
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.adress-info-title {
+    margin-top: 68px;
+    margin-bottom: 20px;
+    font-family: 'Lato';
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.adress-info-item{
+    font-family: 'Open Sans';
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    text-transform: none;
+    color: #aeb7ba;
+}
+.adress-info-item:last-child {
+    color: #ffbb42;
+    cursor: pointer;
+}
+.lower-logo {
+    position: absolute;
+    top:338px;
+    left:526px;
+}
+.container.newsletter {
+    border-bottom:1px solid #e3e7ec;
+    margin-bottom: 68px;
+}
+.nav.lower {
+    display: flex;
+    margin-bottom: 29px;
+}
+.first-menu.lower{
+    margin-left: auto;
+    margin-right: auto;
+}
+.item.lower{
+    margin:0;
+}
+.footer-number {
+    text-align: center;
+    font-family: 'Lato';
+    font-size: 22.6px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #394b50;
+    margin-bottom: 23px;
+}
+.footer-number::before {
+    content:'\f879';
+    font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+    font-size: 20.2px;
+    line-height: 1.2;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #394b50;
+}
+.socials {
+    display: flex;
+    justify-content:center;
+    margin-bottom: 53px;
+}
+.social-item {
+    margin-right: 15px;
+    width: 18px;
+    height: 18px;
+    background-image: url(../img/networks/twitter.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.social-item:nth-child(2) {
+    background-image: url(../img/networks/facebook.png);
+}
+.social-item:nth-child(3) {
+    background-image: url(../img/networks/google.png);
+}
+.social-item:nth-child(4) {
+    background-image: url(../img/networks/in.png);
+    margin-right: 0;
+}
+.footer {
+    height: 45px;
+    background-color: #709dca;
+}
+.copyright-paragraph {
+    padding-top: 17px;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+}
